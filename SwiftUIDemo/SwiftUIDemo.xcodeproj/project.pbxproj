@@ -15,6 +15,7 @@
 		5870DDFB2811A14800974A36 /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870DDFA2811A14800974A36 /* SwiftUIDemoUITests.swift */; };
 		5870DDFD2811A14800974A36 /* SwiftUIDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870DDFC2811A14800974A36 /* SwiftUIDemoUITestsLaunchTests.swift */; };
 		5870DE0A2811AAA600974A36 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870DE092811AAA600974A36 /* Landmark.swift */; };
+		58B61C24285C63DF0041CA7D /* LandMarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B61C23285C63DF0041CA7D /* LandMarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		5870DDFA2811A14800974A36 /* SwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		5870DDFC2811A14800974A36 /* SwiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5870DE092811AAA600974A36 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		58B61C23285C63DF0041CA7D /* LandMarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				5870DDDF2811A14700974A36 /* SwiftUIDemoApp.swift */,
 				5870DDE12811A14700974A36 /* ContentView.swift */,
+				58B61C23285C63DF0041CA7D /* LandMarkDetail.swift */,
 				5870DE092811AAA600974A36 /* Landmark.swift */,
 				5870DDE32811A14800974A36 /* Assets.xcassets */,
 				5870DDE52811A14800974A36 /* Preview Content */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B61C24285C63DF0041CA7D /* LandMarkDetail.swift in Sources */,
 				5870DDE22811A14700974A36 /* ContentView.swift in Sources */,
 				5870DDE02811A14700974A36 /* SwiftUIDemoApp.swift in Sources */,
 				5870DE0A2811AAA600974A36 /* Landmark.swift in Sources */,

@@ -11,8 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List(landmarks) { landmark in
-                NavigationLink(destination: Text("111")){
-                    HStack{
+                NavigationLink(destination: LandMarkDetail(landmark: landmark)){
                         Image(landmark.imageName)
                             .renderingMode(.original)
                             .resizable()
@@ -25,7 +24,6 @@ struct ContentView: View {
                             Text(landmark.location)
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
-                        }
                     }
                 }
             }
