@@ -11,21 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List(landmarks) { landmark in
-                NavigationLink(destination: LandMarkDetail(landmark: landmark)){
-                        Image(landmark.imageName)
-                            .renderingMode(.original)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 60.0, height: 60.0)
-                            .clipped()
-                            .cornerRadius(8)
-                        VStack(alignment: .leading){
-                            Text(landmark.name)
-                            Text(landmark.location)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                    }
-                }
+                LandmarkCell(landmark: landmark)
             }
             .navigationBarTitle("世界地标")
         }
@@ -35,5 +21,26 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct LandmarkCell: View {
+    let landmark: Landmark
+    var body: some View {
+        NavigationLink(destination: LandMarkDetail(landmark: landmark)){
+            Image(landmark.imageName)
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 60.0, height: 60.0)
+                .clipped()
+                .cornerRadius(8)
+            VStack(alignment: .leading){
+                Text(landmark.name)
+                Text(landmark.location)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+        }
     }
 }
