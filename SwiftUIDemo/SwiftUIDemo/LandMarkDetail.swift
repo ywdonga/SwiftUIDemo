@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandMarkDetail: View {
     let landmark: Landmark
-    @State var zooned = false
+    @State private var zooned = false
     
     var body: some View {
         ZStack(alignment: .bottomTrailing){
